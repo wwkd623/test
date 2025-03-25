@@ -7,27 +7,41 @@
     <style>
         caption{
             text-align: left;
+            color: #de3000;
         }
         table{
             border: 1px solid #000;
             margin: auto;
             width: 600px;
+            border-spacing: 0px;
+            border-collapse: collapse;
         }
         td{
             border: 1px solid #000;
             text-align: center;
+            height: 30px;
+            width: 200px;
+        }
+        .row1{
+            background: #ffcc01;
+        }
+        .row8{
+            background: #00ccff;
+        }
+        .row2{
+            background: #e4e4e4;
         }
     </style>
 </head>
 <body>
     <table>
         <caption>학기별 성적표 테이블</caption>
-        <tr>
+        <tr class="row1">
             <td>학기</td>
             <td>1 학기</td>
             <td>2 학기</td>
         </tr>
-        <tr>
+        <tr class="row2">
             <td>점수</td>
             <td></td>
             <td></td>
@@ -37,7 +51,7 @@
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="row2">
             <td>점수</td>
             <td></td>
             <td></td>
@@ -47,7 +61,7 @@
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="row2">
             <td>점수</td>
             <td></td>
             <td></td>
@@ -57,7 +71,7 @@
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr class="row8">
             <td>합계</td>
             <td></td>
             <td></td>
