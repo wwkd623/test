@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표만들기</title>
+    <style>
+        h3{
+            text-align: center;
+        }
+        table{
+            /* 테두리선 삽입할 때 */
+            border: 1px solid #000;
+            width: 600px;
+            /* 표 통째로 가운데 정렬할 때 */
+            margin: auto;
+        }
+        caption{
+            text-align: right;
+        }
+        td{
+            border: 1px solid #000;
+            /* 글자를 정렬할 때 사용 */
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>[문서 테이블 꾸미기]</h3>
+    <!-- 표 만들기 -->
+    <table>
+        <!-- 표에 대한 설문 -->
+        <caption>* 주간시간표 테이블</caption>
+        <!-- 표 안에 하나의 행 -->
+        <tr>
+            <!-- 하나의 행안에서 열 -->
+            <td>1교시</td>
+            <td>2교시</td>
+            <td>3교시</td>
+        </tr>
+        <tr>
+            <td>포토샵</td>
+            <td>HTML</td>
+            <td>JQUERY</td>
+        </tr>
+        <tr>
+            <td>일러스트</td>
+            <td>CSS</td>
+            <td>포트폴리오</td>
+        </tr>
+    </table>
+</body>
+</html>
