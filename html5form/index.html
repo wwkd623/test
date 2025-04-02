@@ -24,6 +24,9 @@
             width: 132px;
             height: 22px;
         }
+        .input4{
+            height: 22px;
+        }
     </style>
 </head>
 <body>
@@ -56,21 +59,21 @@
                 <li>
                     <label for="sh">search :</label>
                     <!-- 사용 못하게 걸어놓는 폼 > disabled -->
-                    <input type="search" name="" id="sh" disabled placeholder="webdesign">
+                    <input type="search" name="" id="sh" disabled placeholder="webdesign" class="input4">
                 </li>
                 <li>
                     <label for="url">url :</label>
-                    <input type="url" name="" id="url" placeholder="http://">
+                    <input type="url" name="" id="url" placeholder="http://" class="input4">
                 </li>
                 <li>
                     <label for="no">number :</label>
                     <!-- 최소값 min, 최대값 max, 기본값세팅은 value, 설정수 만큼 증가 step(잘안씀) -->
                     <!-- name은 프론트에선 잘 안씀(백엔드 영역) -->
-                    <input type="number" name="" id="no" min="1" max="10" value="2" step="2">
+                    <input type="number" name="" id="no" min="1" max="10" value="2" step="2" class="input4">
                 </li>
                 <li>
                     <label for="tel">tel :</label>
-                    <input type="tel" name="" id="tel" placeholder="010-3724-8776">
+                    <input type="tel" name="" id="tel" placeholder="010-3724-8776" class="input4">
                 </li>
                 <li>
                     <label for="rg">range :</label>
@@ -78,7 +81,7 @@
                 </li>
                 <li>
                     <label for="date">date :</label>
-                    <input type="date" name="" id="date">
+                    <input type="date" name="" id="date" class="input4">
                 </li>
                 <li>
                     <label for="col">color :</label>
@@ -104,7 +107,7 @@
                 <li>
                     <label for="">ID :</label>
                     <!-- 폼 안에 내용 수정 못하게 하기 > readonly -->
-                    <input type="text" name="" id="" placeholder="wwkdwwkd" readonly>
+                    <input type="text" name="" id="" placeholder="wwkdwwkd" readonly class="input4">
                 </li>
             </ul>
             <hr>
