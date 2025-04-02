@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문서</title>
+    <style>
+        fieldset{
+            border: 1px solid #d3a957;
+            padding: 20px;
+        }
+        legend{
+            color: #d3a957;
+        }
+        li{
+            list-style: none;
+            background: #eeeeee;
+            /* 안쪽여백 padding, 바깥쪽여백 margin */
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .input1{
+            text-align: right;
+        }
+        .input2{
+            background: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>상품 주문서</h1>
+    <form action="">
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ul>
+                <li>
+                    <label for="name">이름</label>
+                    <input type="text" name="" id="name" required placeholder="여백없이 입력">
+                </li>
+                <li>
+                    <label for="pw">비밀번호</label>
+                    <input type="password" name="" id="pw" required placeholder="비밀번호를 입력하시오">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <ul>
+                <li>
+                    <label for="address">주소</label>
+                    <input type="text" name="" id="address">
+                </li>
+                <li>
+                    <label for="tel">전화번호</label>
+                    <select name="" id="tel">
+                        <option value="">011</option>
+                        <option value="">010</option>
+                        <option value="">017</option>
+                    </select>
+                    <input type="tel" name="" id="tel" maxlength="4">
+                    <input type="tel" name="" id="tel" maxlength="4">
+                </li>
+                <li>
+                    <label for="memo">메모</label>
+                    <textarea name="" id="memo" cols="45" rows="2" placeholder="여기에 메모를 입력하세요"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>주문 정보</legend>
+            <ul>
+                <li>
+                    <label for="n1">과테말라 안티구아 (100g)</label>
+                    <input type="number" name="" id="n1" value="0" min="0" max="10" class="input1">
+                    <label for="">개</label>
+                </li>
+                <li>
+                    <label for="n2">인도네시아 만델링 (100g)</label>
+                    <input type="number" name="" id="n2" value="0" min="0" max="10" class="input1">
+                    <label for="">개</label>
+                </li>
+                <li>
+                    <label for="n3">탐라는도다 (블렌딩) (100g)</label>
+                    <input type="number" name="" id="n3" value="0" min="0" max="10" class="input1">
+                    <label for="">개</label>
+                </li>
+                <li>
+                    <label for="s1">01</label><input type="checkbox" name="" id="s1" checked>
+                    <label for="s2">02</label><input type="checkbox" name="" id="s2">
+                    <label for="s3">03</label><input type="checkbox" name="" id="s3">
+                    <label for="s4">04</label><input type="checkbox" name="" id="s4">
+                </li>
+                <li>
+                    <label for="r01">r01</label><input type="radio" name="rr" id="r01" checked>
+                    <label for="r02">r02</label><input type="radio" name="rr" id="r02">
+                    <label for="r03">r03</label><input type="radio" name="rr" id="r03">
+                    <label for="r04">r04</label><input type="radio" name="rr" id="r04">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>버튼모음</legend>
+            <input type="submit" value="주문하기" class="input2">
+            <input type="reset" value="취소" class="input2">
+        </fieldset>
+    </form>
+</body>
+</html>
